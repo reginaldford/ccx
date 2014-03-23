@@ -1,0 +1,47 @@
+make[ :true :true ]
+make[ :false :false ]
+make[ :null :null ]
+
+register_singletons [:true :false []]
+
+defun[ :fib
+	{
+		if[
+			<=[_ 2]
+			{ 1 }
+			{ + [ fib - [ _ 1 ] fib - [ _ 2 ] ] }
+		]
+	}
+]
+
+defun[ :length
+	{
+		if[ is[_ []]
+			{ 0 }
+			{+[1 length rest _]}
+		]
+	}
+]
+
+defun[ :nth
+	{
+		make[:c first _]
+		make[:i first rest _]
+		if[ is[i 1]
+			{ first c }
+			{nth[rest c -[i 1] ]}
+		]
+	}
+]
+
+print-mode
+
+defnul[ :repl
+	{
+		print format "\n(cx:) "
+		evnul parse read-line 
+		repl
+	}
+]
+
+repl

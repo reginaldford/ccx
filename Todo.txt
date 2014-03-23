@@ -1,0 +1,22 @@
+CX TODO
+
+-FIX INP TO BE A VARIABLE (execute waiter)
+
+-sub-object access
+-deep object copying (uses inflation code)
+-take out the pop(wait_stack)'s from the waiters, mark them in a table
+and use the mark to pop(wait_stack) from the interp loop
+-add the colon ability (with prim concat for JIT)
+-collections
+-traits lib?
+-smart make word
+-context optimization
+-prettyprinting of contexts
+-units (5cm)
+-dynamic scope library
+
+
+current goal breakdown:
+
+we are making the traits system
+traits link symbols to collections of traits

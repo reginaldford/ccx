@@ -1,0 +1,11 @@
+WAIT_PRIM_PT(eval);
+WAIT_PRIM_PT(evnul);
+WAIT_PRIM_PT(obj_switch);
+void prim_inp(void);
+WAIT_PRIM_PT(exit);
+WAIT_PRIM_PT(first);
+WAIT_PRIM_PT(rest);
+WAIT_PRIM_PT(equal);
+WAIT_PRIM_PT(ifte);
+WAIT_PRIM_PT(apply_if);
+WAIT_PRIM_PT(cp);

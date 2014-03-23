@@ -1,0 +1,13 @@
+void sub_prim_collector(void);
+void sub_prim_trigger(void);
+void prim_wait_killer(void);
+WAIT_PRIM_PT(print);
+void prim_print_mode(void);
+void print_node();
+void print_symbol(void);
+WAIT_PRIM_PT(print_string);
+void print_cd(void);
+void prim_read_line(void);
+void prim_parse(void);
+WAIT_PRIM_PT(format);
+void print_sized_string(char* str, int size);
